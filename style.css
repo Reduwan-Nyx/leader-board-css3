@@ -97,7 +97,7 @@ hr{
 .course-info{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    
 }
 .fa-star{
     font-size: 12px;
@@ -107,6 +107,11 @@ hr{
 }.fa-star.empty{
     color: #AEAEAE;
    
+}
+
+.course-duration{
+    color: #FF4A60;
+    margin-left: 20px;
 }
 
 /*--------------
@@ -119,14 +124,24 @@ hr{
     .container{
         width: 100%;
     }
-    .players, .blogs, .courses{
+    .players, .blogs {
        
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        
+      
+    }
+    .courses {
         grid-template-columns: repeat(1, 1fr);
+        margin-left: 50px;
+        width: 50%;
     }
-    .player, .blog, .course{
-        align-items: center;
+    .player, .blog, .course {
+        
         flex-direction: column;
+       
     }
+   
     
 }
 
